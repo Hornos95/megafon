@@ -2,13 +2,13 @@ package ru.itpark.model;
 
 public class TurnOnRate extends Rate {
     private int call;
-    private int SMS;
+    private int sms;
     private boolean cashback;
 
-    public TurnOnRate(String id, String name, String description, int price, String internet, int call, int SMS, boolean cashback) {
+    public TurnOnRate(String id, String name, String description, int price, String internet, int call, int sms, boolean cashback) {
         super(id, name, description, price, internet);
         this.call = call;
-        this.SMS = SMS;
+        this.sms = sms;
         this.cashback = cashback;
     }
 
@@ -20,12 +20,12 @@ public class TurnOnRate extends Rate {
         this.call = call;
     }
 
-    public int getSMS() {
-        return SMS;
+    public int getSms() {
+        return sms;
     }
 
-    public void setSMS(int SMS) {
-        this.SMS = SMS;
+    public void setSms(int sms) {
+        this.sms = sms;
     }
 
 
