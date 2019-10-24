@@ -11,15 +11,7 @@ public class CartService {
 
     public void add(Rate rate) {
         rates[size++] = rate;
-        if (rate instanceof TurnOnRate) {
-            TurnOnRate turnOn = (TurnOnRate) rate;
-        }
-        if (rate instanceof OtherDevice) {
-            OtherDevice device = (OtherDevice) rate;
-        }
-        if (rate instanceof OtherRate) {
-            OtherRate otherRate = (OtherRate) rate;
-        }
+
     }
 
     public Rate[] getRates() {
